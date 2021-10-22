@@ -3,6 +3,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     openPopupPerform(message, sender, sendResponse)
   } else if (message.action === "DeleteCookies") {
     deleteCookiesPerform(message, sender, sendResponse)
+  } else if (message.action === "DeleteLocalStorage") {
+    deleteLocalStoragePerform(message, sender, sendResponse)
   }
 
   return true
@@ -27,5 +29,22 @@ let deleteCookiesPerform = async (message, sender, sendResponse) => {
     }
 
     sendResponse({ success: true })
+  })
+}
+
+let deleteLocalStoragePerform = async (message, sender, sendResponse) => {
+  chrome.tabs.query({ active: true }, (tabs) => {
+    if (tabs.length === 0) {
+      sendResponse({})
+    } else {
+      let tab = tabs[0]
+
+      chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        function: () => {
+          localStorage.clear()
+        }
+      }, () => { sendResponse({ success: true }) })
+    }
   })
 }

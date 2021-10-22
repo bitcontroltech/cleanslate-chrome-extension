@@ -12,6 +12,7 @@
   },
   "permissions": [
     "cookies",
+    "scripting",
     "tabs"
   ],
   "host_permissions": [
