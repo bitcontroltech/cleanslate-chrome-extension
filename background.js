@@ -5,6 +5,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     deleteCookiesPerform(message, sender, sendResponse)
   } else if (message.action === "DeleteLocalStorage") {
     deleteLocalStoragePerform(message, sender, sendResponse)
+  } else if (message.action === "Reload") {
+    reloadPerform(message, sender, sendResponse)
   }
 
   return true
@@ -43,6 +45,23 @@ let deleteLocalStoragePerform = async (message, sender, sendResponse) => {
         target: { tabId: tab.id },
         function: () => {
           localStorage.clear()
+        }
+      }, () => { sendResponse({ success: true }) })
+    }
+  })
+}
+
+let reloadPerform = async (message, sender, sendResponse) => {
+  chrome.tabs.query({ active: true }, (tabs) => {
+    if (tabs.length === 0) {
+      sendResponse({})
+    } else {
+      let tab = tabs[0]
+
+      chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        function: () => {
+          location.reload()
         }
       }, () => { sendResponse({ success: true }) })
     }

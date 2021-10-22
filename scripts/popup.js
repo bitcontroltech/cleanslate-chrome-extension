@@ -11,6 +11,7 @@ chrome.runtime.sendMessage({ action: "OpenPopup" }, (response) => {
 
 let buttonDeleteCookies = document.querySelector("#button__delete_cookies")
 let buttonDeleteLocalStorage = document.querySelector("#button__delete_local_storage")
+let buttonReload = document.querySelector("#button__reload")
 
 buttonDeleteCookies.addEventListener("click", event => {
   let button = event.target
@@ -33,6 +34,19 @@ buttonDeleteLocalStorage.addEventListener("click", event => {
   button.innerHTML = "Processing..."
 
   chrome.runtime.sendMessage({ action: "DeleteLocalStorage" }, () => {
+    button.innerHTML = originalText
+    button.classList.remove("processing")
+  })
+})
+
+buttonReload.addEventListener("click", event => {
+  let button = event.target
+  let originalText = button.text
+
+  button.classList.add("processing")
+  button.innerHTML = "Processing..."
+
+  chrome.runtime.sendMessage({ action: "Reload" }, () => {
     button.innerHTML = originalText
     button.classList.remove("processing")
   })
