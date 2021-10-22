@@ -1,10 +1,13 @@
 body {
-  background-color: white;
+  padding: 0.8rem;
+  background-color: #f8f8f8;
 }
 
 h3.extension-name {
+  margin-top: 0;
   font-size: 1.2em;
   text-align: center;
+  text-transform: uppercase;
 }
 
 ul.actions {
@@ -20,16 +23,18 @@ ul.actions a {
   min-width: 18em;
   max-width: 100vh;
   border: 1px solid #555555;
-  color: #333333;
+  background-color: #333333;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 ul.actions a:hover {
-  color: maroon;
-  border-color: maroon;
-  background-color: #ffeeee;
+  color: #ffffff;
+  border-color: darkred;
+  background-color: darkred;
 }
 
 .footer {
