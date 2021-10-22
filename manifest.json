@@ -2,5 +2,9 @@
   "manifest_version": 2,
   "name": "Clean Slate",
   "description": "Clear cookies for your browser tab",
-  "version": "0.1"
+  "version": "0.1",
+  "author" : {
+    "name": "Bit Control Technologies, Inc.",
+    "email": "solutions@bitcontroltech.com"
+  }
 }
