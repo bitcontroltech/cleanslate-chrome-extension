@@ -10,7 +10,12 @@
     "default_popup": "popup.html"
   },
   "permissions": [
+    "cookies",
     "tabs"
+  ],
+  "host_permissions": [
+    "http://*/",
+    "https://*/"
   ],
   "author" : {
     "name": "Bit Control Technologies, Inc.",
