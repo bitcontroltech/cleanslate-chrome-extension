@@ -2,6 +2,11 @@ body {
   background-color: white;
 }
 
+h3.extension-name {
+  font-size: 1.2em;
+  text-align: center;
+}
+
 ul.actions {
   padding: 0;
   list-style-type: none;
