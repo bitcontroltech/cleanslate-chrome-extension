@@ -6,6 +6,9 @@
   "background": {
     "service_worker": "background.js"
   },
+  "action": {
+    "default_popup": "popup.html"
+  },
   "author" : {
     "name": "Bit Control Technologies, Inc.",
     "email": "solutions@bitcontroltech.com"
