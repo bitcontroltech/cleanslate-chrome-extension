@@ -17,6 +17,17 @@ Github.
 5. Click on the "Extensions" toolbar icon in Chrome, and pin the Clean Slate
    extension.
 
+## Usage
+
+Go to the browser tab for which you want to clear cookies or local storage data,
+and click on the icon for the extension. In the popup that appears, click on the
+action you want to perform.
+
+See this screenshot:
+
+![Screenshot of extension popup](images/popup.png?raw=true "Screenshot of
+extension popup)
+
 ## Support
 
 Submit bug reports and feature requests in the [Github
