@@ -9,6 +9,9 @@
   "action": {
     "default_popup": "popup.html"
   },
+  "permissions": [
+    "tabs"
+  ],
   "author" : {
     "name": "Bit Control Technologies, Inc.",
     "email": "solutions@bitcontroltech.com"
