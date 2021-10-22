@@ -1,7 +1,7 @@
 # Clean Slate Chrome Extension
 
-This Chrome extension provides a button for deleting cookies for the domain of
-the currently active browser tab.
+This Chrome extension provides buttons for deleting cookies and local storage
+data for the domain of the currently active browser tab.
 
 ## Installation
 
