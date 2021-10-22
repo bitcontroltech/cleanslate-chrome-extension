@@ -17,6 +17,11 @@
     "http://*/",
     "https://*/"
   ],
+  "icons": {
+    "16": "images/icons/icon-16x16.png",
+    "48": "images/icons/icon-48x48.png",
+    "128": "images/icons/icon-128x128.png"
+  },
   "author" : {
     "name": "Bit Control Technologies, Inc.",
     "email": "solutions@bitcontroltech.com"
