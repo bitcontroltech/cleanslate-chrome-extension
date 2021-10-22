@@ -26,7 +26,7 @@ action you want to perform.
 See this screenshot:
 
 ![Screenshot of extension popup](images/popup.png?raw=true "Screenshot of
-extension popup)
+extension popup")
 
 ## Support
 
