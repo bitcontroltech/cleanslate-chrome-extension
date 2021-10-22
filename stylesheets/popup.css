@@ -1,0 +1,28 @@
+body {
+  background-color: white;
+}
+
+ul.actions {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.actions a {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 0.8rem 1rem;
+  min-width: 18em;
+  max-width: 100vh;
+  border: 1px solid #555555;
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul.actions a:hover {
+  color: maroon;
+  border-color: maroon;
+  background-color: #ffeeee;
+}
