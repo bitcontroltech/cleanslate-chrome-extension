@@ -25,7 +25,7 @@ that appears, click on the action you want to perform.
 
 See this screenshot:
 
-![Screenshot of extension popup](images/screenshot-1.1.png?raw=true "Screenshot
+![Screenshot of extension popup](images/screenshot-1.2.png?raw=true "Screenshot
 of the extension popup")
 
 ## Support
