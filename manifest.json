@@ -3,7 +3,7 @@
   "name": "Clean Slate",
   "description": "Clear cookies, localStorage data, and sessionStorage data for your browser tab",
   "homepage_url": "https://github.com/bitcontroltech/cleanslate-chrome-extension",
-  "version": "1.1",
+  "version": "1.2",
   "background": {
     "service_worker": "background.js"
   },
