@@ -14,8 +14,12 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   return true
 })
 
+let performForCurrentTab = (callback) => {
+  chrome.tabs.query({ active: true, currentWindow: true }, callback)
+}
+
 let openPopupPerform = async (message, sender, sendResponse) => {
-  chrome.tabs.query({ active: true }, (tabs) => {
+  performForCurrentTab((tabs) => {
     if (tabs.length === 0) {
       sendResponse({})
     } else {
@@ -37,7 +41,7 @@ let deleteCookiesPerform = async (message, sender, sendResponse) => {
 }
 
 let deleteSessionStoragePerform = async (message, sender, sendResponse) => {
-  chrome.tabs.query({ active: true }, (tabs) => {
+  performForCurrentTab((tabs) => {
     if (tabs.length === 0) {
       sendResponse({})
     } else {
@@ -54,7 +58,7 @@ let deleteSessionStoragePerform = async (message, sender, sendResponse) => {
 }
 
 let deleteLocalStoragePerform = async (message, sender, sendResponse) => {
-  chrome.tabs.query({ active: true }, (tabs) => {
+  performForCurrentTab((tabs) => {
     if (tabs.length === 0) {
       sendResponse({})
     } else {
@@ -71,7 +75,7 @@ let deleteLocalStoragePerform = async (message, sender, sendResponse) => {
 }
 
 let reloadPerform = async (message, sender, sendResponse) => {
-  chrome.tabs.query({ active: true }, (tabs) => {
+  performForCurrentTab((tabs) => {
     if (tabs.length === 0) {
       sendResponse({})
     } else {
