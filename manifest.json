@@ -3,7 +3,7 @@
   "name": "Clean Slate",
   "description": "Clear cookies for your browser tab",
   "homepage_url": "https://github.com/bitcontroltech/cleanslate-chrome-extension",
-  "version": "1.0",
+  "version": "1.1",
   "background": {
     "service_worker": "background.js"
   },
