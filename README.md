@@ -1,7 +1,7 @@
 # Clean Slate Chrome Extension
 
-This Chrome extension provides buttons for deleting cookies and local storage
-data for the domain of the currently active browser tab.
+This Chrome extension provides buttons for deleting cookies, local storage data,
+and session storage data for the domain of the currently active browser tab.
 
 ## Installation
 
@@ -19,14 +19,14 @@ Github.
 
 ## Usage
 
-Go to the browser tab for which you want to clear cookies or local storage data,
-and click on the icon for the extension. In the popup that appears, click on the
-action you want to perform.
+Go to the browser tab for which you want to clear cookies, local storage data,
+or session storage data, and click on the icon for the extension. In the popup
+that appears, click on the action you want to perform.
 
 See this screenshot:
 
-![Screenshot of extension popup](images/popup.png?raw=true "Screenshot of
-extension popup")
+![Screenshot of extension popup](images/screenshot-1.1.png?raw=true "Screenshot
+of the extension popup")
 
 ## Support
 
