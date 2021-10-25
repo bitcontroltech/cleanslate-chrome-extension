@@ -12,6 +12,13 @@ and session storage data for the domain of the currently active browser tab.
 
 ## Installation
 
+### Through the Chrome Web Store
+
+1. Go to the [extension's page](https://chrome.google.com/webstore/detail/clean-slate/dbefdlanpopplpgghcpghmiiiojaalge)
+   in Chrome Web Store, and click on "Add to Chrome".
+2. Click on the "Extensions" toolbar icon in Chrome, and pin the Clean Slate
+   extension.
+
 ### Using Source Code
 
 1. Download the [source
