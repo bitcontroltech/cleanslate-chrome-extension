@@ -3,6 +3,13 @@
 This Chrome extension provides buttons for deleting cookies, local storage data,
 and session storage data for the domain of the currently active browser tab.
 
+## Features
+
+* Buttons to clear cookies, localStorage, or sessionStorage for the domain and host of the
+  active browser tab
+* Adjacent button to reload the active browser tab
+* Supports multiple windows
+
 ## Installation
 
 ### Using Source Code
